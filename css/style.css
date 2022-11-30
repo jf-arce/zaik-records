@@ -12,56 +12,6 @@ a{
 	text-decoration: none;
 }
 
-/*****NAVBAR*****/
-.navbar{
-	background-color: #000000;
-    opacity: 0.9;
-	font-family: 'Karla', sans-serif;
-	font-size: 1.1em;
-	justify-content: space-around;
-
-	animation: fadeInDown;
-	animation-duration: 1s;
-}
-
-.container-fluid{
-	margin: 0px 54.5px;
-}
-
-.nav-link{
-	color: #ffffff;
-}
-
-.nav-link:hover{
-	color: #cc00ff!important;
-}
-
-.active{
-	display: inline-block;
-    margin-left: 8px;
-	color: #cc00ff!important;	
-	border: 1px solid #cc00ff;
-	border-radius: 10px ;
-}
-
-.active:hover{
-	color: #ffffff!important;
-	background-color:#cc00ff ;
-}
-
-.navbar-brand{
-	font-size: 2em;
-	font-family: 'Most Faster Personal Use', sans-serif;
-	color: #ffffff ;
-}
-
-.navbar-brand:hover{
-	color: #cc00ff;
-}
-
-.navbar-toggler-icon{
-	color: #ffffff !important;
-} 
 
 /***************************** INDEX *************************************************/
 
