@@ -1,0 +1,105 @@
+/********FOOTER*********/
+footer{
+	background-color: #000000;
+	/*font-family: 'Karla', sans-serif;*/
+	font-family: 'Monument Extended', sans-serif;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: 300px auto;
+	grid-template-areas: 
+	"logo-redes mail-telefono"
+	"copyright copyright";
+}
+
+.logo-redes{
+	grid-area: logo-redes;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+	
+}
+
+.logo-custom p a:hover{
+	color: #6e6e6e;
+}
+
+.logo-redes__redes a{
+	color: #ffffff;
+}
+.logo-redes__redes a :hover{
+	color: #6e6e6e;
+}
+/**************/
+.mail-telefono{
+	grid-area: mail-telefono;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	padding: 30px;
+
+}
+.mail-telefono__title{
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+.icon-text{
+	font-size: 0.9em;
+	padding-left: 10px;
+	margin-bottom: 12px;
+}
+
+.mail-telefono__contact{
+	display: flex;
+	flex-direction: row;
+}
+
+
+.copyright{
+	background-color: #000000;
+	grid-area: copyright;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	border-top: 0.5px solid #464646;
+	margin: 0px 20px;
+}
+
+.copyright__texto{
+	color: #464646;
+	padding: 10px;
+	font-size: 0.6em;
+	text-decoration: none;
+}
+.copyright a:hover{
+	color: #c6c6c6;
+	padding: 10px;
+	font-size: 0.6em;
+}
+
+/******************* Media Queries *******************/
+
+@media screen and (max-width:768px){
+	.mail-telefono{
+		padding: 0px;
+	}
+	footer{
+		background-color: #000000;
+		/*font-family: 'Karla', sans-serif;*/
+		font-family: 'Monument Extended', sans-serif;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 180px 200px auto;
+		grid-template-areas: 
+		"logo-redes"
+		"mail-telefono"
+		"copyright";
+	}
+	.copyright{
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,21 @@
+/**************BOTONES*******************/
+.btn{
+	color: black;
+	background: linear-gradient(90deg, hsla(181, 64%, 55%, 1) 0%, hsla(150, 61%, 48%, 1) 100%);
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 1px solid #000000;
+	box-shadow: 6px 6px 22px -2px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 6px 6px 22px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 6px 6px 22px -2px rgba(0,0,0,0.75);
+	margin-top: 30px;
+    
+    &:hover{
+        color: black;
+        background: linear-gradient(90deg, hsla(281, 64%, 55%, 1) 0%, hsla(225, 61%, 48%, 1) 100%);
+        border: 1px solid #000000;
+        transform: scale(1.1);
+        animation-duration: 0.4s;
+    }
+}
+

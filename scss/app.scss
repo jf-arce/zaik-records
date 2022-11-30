@@ -1,4 +1,18 @@
+//base
+@import "./base/reset.scss";
+@import "./base/typo.scss";
+
+//Components
+@import "./components/buttons.scss";
+@import "./components/cards.scss";
+@import "./components/sliders.scss";
+
 //Layout
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
+
+//views
+@import "./views/home.scss";
+@import "./views/sobre-nosotros.scss";
+@import "./views/beats-servicios.scss";
 

@@ -1,0 +1,155 @@
+/************************************ Beats & Servicios ***************************************************/
+#beat-services{
+	background-image: url(../images/Beats&Services.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/*hero*/
+#hero-product{
+	background-image: url(../images/beat&services2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 68.78px;
+	height: 92vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #ffffff;
+}
+.product__title{
+	font-size: 4em;
+	
+	
+	animation: fadeIn;
+	animation-duration: 2s;
+}
+.product__subtitle{
+	width: 80%;
+
+	animation: fadeIn;
+	animation-duration: 2s;
+}
+
+/****** SERVICIO DE PRODUCCION / MEZCLA & MASTERING **************/
+#production-services{
+	margin-top: 60px;
+	height: 120vh;
+}
+.services__title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	padding: 50px;
+	font-size: 3em;
+}
+.cards-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+/***************** AUDIOS BEATS *******************/
+#beats{
+	background-color: #0c0c0c;
+	height: 100vh;
+}
+.beat__item{
+	background-image: url(../images/home-studio-basico.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 350px;
+	height: 100px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 30px;
+	transition-duration: 0.3s;
+}
+.beat__item:hover{
+	transform: scale(1.1);
+	transition-duration: 0.3s;
+}
+.beat__title{
+	font-size: 1.5em;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.beat__audio{
+	width: 90%;
+	height: 50px;
+}
+
+.beats__title{
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3em;
+	padding: 30px;
+}
+.beats__content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+/******************************* Media Queries ***********************************/
+
+/*** hero ***/
+
+@media (max-width:768px){
+	/*hero*/
+	#hero-product{
+	height: 92vh;
+	}
+	.product__title{
+		font-size: 3em;
+	}
+	.product__subtitle{
+		width: 80%;
+		margin-top: 20px;
+	}
+	
+}
+
+/****** SERVICIO DE PRODUCCION / MEZCLA & MASTERING **************/
+@media (max-width:768px){
+	#production-services{
+		margin-top: 60px;
+		height: 370vh;
+	}
+	.services__title{
+		text-align: center;
+		font-size: 2.5em;
+		padding: 10px;
+	}
+	.cards-content{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 50px;
+	}
+}
+
+
+/***************** AUDIOS BEATS *******************/
+
+@media (max-width:768px){
+	#beats{
+		background-color: #0c0c0c;
+		height: 225vh;
+	}
+	
+	.beats__title{
+		text-align: center;
+	}
+}

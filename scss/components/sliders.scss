@@ -1,0 +1,242 @@
+/******HERO-SLIDER INDEX.HTML******/
+#hero{
+    margin-top: -78.8;
+}
+.slides {
+    position: relative;
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.slides::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0);
+}
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    animation: cycle 12s infinite;
+}
+.slide-2 {
+    animation-delay: 4s;
+}
+
+.slide-3 {
+    animation-delay: 8s;
+}
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes cycle {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    30% {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.hero__container{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    animation: fadeIn;
+	animation-duration: 2s;
+}
+.hero__title{
+    font-size: 4em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+}
+
+.hero__subtitle{
+    font-size: 0.9em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+
+
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+.hero__social a{
+    padding: 0px 20px;
+	color: #ffffff;
+
+	animation:zoomInDown;
+	animation-duration: 3s;
+
+    &:hover{
+        color: #a7a7a7;
+    }
+}
+
+/***************** ARTISTAS SLIDERS-CARDS**********/
+.artist-slider{
+	width: 80vw;
+	height: auto;
+	margin: auto;
+	overflow: hidden;
+}
+.slider__track{
+	display: grid;
+	grid-auto-flow: column;
+	gap: 1.2rem;
+	animation: slider-scroll 15s linear infinite;
+	width: auto;
+
+    &:hover{
+        animation-play-state: paused;
+    }
+}
+
+.slider-item:hover{
+	transform: scale(0.96);
+} 
+
+.slider-item{
+	border-radius: 30px;
+	min-height: 200px;
+	min-width: 300px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	color: white;
+
+    &:hover{
+        animation-play-state: paused;
+    }
+}
+.slider-item:nth-child(1) {
+	background: linear-gradient(-229deg, #FBD52D, #EF3A7B);
+    background-image: url(/images/jquiles-2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.slider-item:nth-child(2) {
+	background: linear-gradient(-229deg, #FF70AF, #5FA8F5);
+    background-image: url(/images/becky-g.jpg);
+	background-size: cover;
+}
+
+.slider-item:nth-child(3) {
+	background: linear-gradient(-229deg, #0cebeb, #29ffc6);
+	background-image: url(/images/paulo-londra.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.slider-item:nth-child(4) {
+	background: linear-gradient(-229deg, #88F7F9, #048FFF);
+	background-image: url(/images/de-la-ghetto-_1080.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.slider-item:nth-child(5) {
+	background: linear-gradient(-229deg, #0093E9, #80D0C7);
+	background-image: url(/images/lgante.jpg);
+	background-size: cover;
+	background-position: center;
+}
+	
+
+.slider-item:nth-child(6) {
+	background: linear-gradient(-229deg, #cf91ff, #5782F5);
+	background-image: url(/images/eladio-carrion.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.slider-item:nth-child(7) {
+	background: linear-gradient(-229deg, #642B73, #C6426E);
+	background-image: url(/images/anuelAA.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.slider-item:nth-child(8) {
+	background: linear-gradient(-229deg, #35acac, #943ee5);
+	background-image: url(/images/nicki-nicole.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.slider-item:nth-child(9) {
+	background: linear-gradient(-229deg, #35acac, #943ee5);
+	background-image: url(/images/trueno.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+@keyframes slider-scroll{
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(-90vw);
+	}
+	
+} 
+
+/******************* Media Queries *******************/
+
+/******HERO-Index*****/
+@media screen and (max-width:768px){
+    .hero__title{
+        font-size: 3em;
+    }
+    .hero__subtitle{
+        font-size: 0.9em;   
+    }
+    .hero__social a{ 
+        font-size: 0.1px;   
+    }
+}
+
+/***** ARTISTAS SLIDERS-CARDS ***********/
+@media (max-width:768px){
+	.artist-slider{
+		width: 80%;
+	}
+	.slider__track{
+		animation: slider-scroll 20s linear infinite;
+	}
+	
+	@keyframes slider-scroll{
+		0%{
+			transform: translateX(0);
+		}
+		100%{
+			transform: translateX(calc(-300px * 7));
+		}
+	} 
+}

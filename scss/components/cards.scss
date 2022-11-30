@@ -1,0 +1,93 @@
+/********** Tarjetas Licencias ********/
+.beats-services__title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	color: #ffffff;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+#beats-services{
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	gap: 20px;
+	padding: 0px 50px;
+	background-image: url(../images/Beats&Services.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.card-service{
+	width: 25%;
+	font-size: 1em;
+	color: #000000;
+	border: 5px solid rgb(41, 41, 41);
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(90deg, rgb(175, 18, 202) 0%, rgb(146, 51, 241) 100%);
+}
+.card-service--active{
+	transform: scale(1.03);
+	border: 3px solid rgb(165, 255, 252);
+}
+.service__title{
+	background:  rgb(41, 41, 41);
+	font-size: 2em;
+	padding: 20px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin: 0;
+	color: white;
+	width: 100%;
+}
+.service__price{
+	padding: 10px;
+	font-size: 3em;
+	border-bottom: 2px solid #000000;
+}
+.service__list{
+	height: 100%;
+	padding: 20px;
+	list-style-type: none ;
+	line-height: 30px;
+}
+.list__content{
+	margin: 10px;
+}
+.btn--service{
+	margin: 20px;
+	margin-bottom: 100px;
+}
+
+/********************** Media Querie **************************/
+
+/********** Tarjetas Licencias ********/
+@media (max-width:768px){
+	.beats-services__title{
+		text-align: center;
+		font-size: 2.5em;
+	}
+	#beats-services{
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		
+		gap: 20px;
+		padding: 0px 50px;
+		background-image: url(../images/Beats&Services.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.card-service{
+		width: 100%;
+		font-size: 1em;
+		margin:20px 0px;
+	}
+}
