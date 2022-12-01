@@ -60,7 +60,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #af12ca 0%, #9233f1 100%); }
+  background: linear-gradient(to left, #cc00ff, #7F00FF); }
 
 .card-service--active {
   transform: scale(1.03);
@@ -94,6 +94,11 @@ a {
 .btn--service {
   margin: 20px;
   margin-bottom: 100px; }
+
+.cards-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
 
 /********************** Media Querie **************************/
 /********** Tarjetas Licencias ********/
@@ -310,6 +315,31 @@ a {
     100% {
       transform: translateX(calc(-300px * 7)); } } }
 
+form {
+  padding: 15px 30px;
+  background-color: #121212;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column; }
+  form .form__title {
+    font-size: 1.5em;
+    padding-top: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    color: white; }
+  form .campo {
+    border-radius: 5px; }
+    form .campo::-webkit-input-placeholder {
+      padding: 10px;
+      font-size: 0.9em; }
+  form .enviar {
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none; }
+    form .enviar:hover {
+      transform: none; }
+
 /*****NAVBAR - HEADER*****/
 .navbar {
   background-color: #000000;
@@ -471,27 +501,24 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.welcome__title {
-  display: flex;
-  justify-content: center;
-  font-size: 2em;
-  padding: 30px;
-  align-items: center; }
-
-.welcome__subtitle {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  padding: 40px 10px; }
-
-.welcome__paragraph {
-  padding: 0px 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  line-height: 2; }
+  #welcome .welcome__title {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    padding: 30px;
+    align-items: center; }
+  #welcome .welcome__subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    padding: 40px 10px; }
+  #welcome .welcome__paragraph {
+    padding: 0px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2; }
 
 /********SECOND SECTION: SOBRE NOSOTROS*********/
 #about-us {
@@ -503,27 +530,23 @@ footer {
   grid-column-gap: 50px;
   padding: 50px;
   height: 105vh; }
-
-.about-us__image {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .about-us__image img {
-    width: 40vw;
-    border-radius: 40px; }
-
-.about-us__text {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.about-us__title {
-  margin-bottom: 10px; }
-
-.about-us__paragraph {
-  margin-top: 20px; }
+  #about-us .about-us__image {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #about-us .about-us__image img {
+      width: 40vw;
+      border-radius: 40px; }
+  #about-us .about-us__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #about-us .about-us__title {
+    margin-bottom: 10px; }
+  #about-us .about-us__paragraph {
+    margin-top: 20px; }
 
 /********THIRD SECTION: VENTA DE BEATS*********/
 #buy-beats {
@@ -531,38 +554,34 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 100vh; }
-
-.buy-beats__text {
-  background: linear-gradient(90deg, #43d3d6 0%, #30c57a 100%);
-  color: #000000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
-  justify-content: center; }
-
-.audios {
-  background-image: url(../images/venta-beats.jpg);
-  background-size: cover;
-  background-image: url(../images/venta-beats.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 180%;
-  object-fit: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .audios audio {
-    width: 50%;
-    margin: 30px; }
-
-.text__title {
-  margin-bottom: 50px; }
-
-.text__paragraph {
-  margin-bottom: 20px;
-  text-align: center; }
+  #buy-beats .buy-beats__text {
+    background: linear-gradient(90deg, #43d3d6 0%, #30c57a 100%);
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    justify-content: center; }
+    #buy-beats .buy-beats__text .text__title {
+      margin-bottom: 50px; }
+    #buy-beats .buy-beats__text .text__paragraph {
+      margin-bottom: 20px;
+      text-align: center; }
+  #buy-beats .audios {
+    background-image: url(../images/venta-beats.jpg);
+    background-size: cover;
+    background-image: url(../images/venta-beats.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 180%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #buy-beats .audios audio {
+      width: 50%;
+      margin: 30px; }
 
 /********PRODUCTS*********/
 #products {
@@ -572,25 +591,24 @@ footer {
   align-items: center;
   justify-content: space-around;
   height: 90vh; }
-
-.products__card {
-  background: linear-gradient(to left, #cc00ff, #7F00FF);
-  padding: 100px;
-  border: 5px solid #292929;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 30%;
-  height: 60%; }
-  .products__card:hover {
-    background: linear-gradient(90deg, #43d3d6 0%, #30c57a 100%);
-    transform: scale(1.08);
-    cursor: pointer; }
-  .products__card a {
-    font-size: 25px;
-    color: black; }
+  #products .products__card {
+    background: linear-gradient(to left, #cc00ff, #7F00FF);
+    padding: 100px;
+    border: 5px solid #292929;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    height: 60%; }
+    #products .products__card:hover {
+      background: linear-gradient(90deg, #43d3d6 0%, #30c57a 100%);
+      transform: scale(1.08);
+      cursor: pointer; }
+    #products .products__card a {
+      font-size: 25px;
+      color: black; }
 
 /****************************** Media Queries ***************************************/
 /*********Seccion 1 WELCOME********/
@@ -663,16 +681,14 @@ footer {
   align-items: center;
   justify-content: center;
   color: aliceblue; }
-
-.hero__container--sn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: fadeIn;
-  animation-duration: 2s; }
-
-.hero__title-sn {
-  font-size: 4em; }
+  #hero--sn .hero__container--sn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn;
+    animation-duration: 2s; }
+    #hero--sn .hero__container--sn .hero__title--sn {
+      font-size: 4em; }
 
 /*section 2*/
 #phrase {
@@ -680,12 +696,11 @@ footer {
   padding: 0px 50px;
   display: flex;
   align-items: center; }
-
-.phrase__title {
-  color: #30c57a;
-  color: #cc00ff;
-  font-size: 4em;
-  text-align: center; }
+  #phrase .phrase__title {
+    color: #30c57a;
+    color: #cc00ff;
+    font-size: 4em;
+    text-align: center; }
 
 /*section 3*/
 #info {
@@ -694,50 +709,38 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 0px 40px; }
-
-.info__title {
-  font-size: 4em;
-  margin-bottom: 120px;
-  color: #cc00ff;
-  color: aliceblue; }
-
-.info__content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "text image" "text image"  "text image";
-  padding: 0px 50px;
-  gap: 50px; }
-
-.content__text {
-  grid-area: text;
-  color: aliceblue; }
-
-.text__information {
-  margin-bottom: 60px;
-  margin-right: 30px;
-  line-height: 35px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center; }
-
-.information__tittle {
-  margin-bottom: 30px; }
-
-.content__image-content {
-  grid-area: image;
-  background-image: url(../images/grabacion.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 15px; }
-
-.information__tittle {
-  color: #cc00ff; }
-
-.image-content__img {
-  width: 610px;
-  height: 1100px; }
+  #info .info__title {
+    font-size: 4em;
+    margin-bottom: 120px;
+    color: #cc00ff;
+    color: aliceblue; }
+  #info .info__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "text image" "text image"  "text image";
+    padding: 0px 50px;
+    gap: 50px; }
+    #info .info__content .content__text {
+      grid-area: text;
+      color: aliceblue; }
+      #info .info__content .content__text .text__information {
+        margin-bottom: 60px;
+        margin-right: 30px;
+        line-height: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; }
+        #info .info__content .content__text .text__information .information__tittle {
+          color: #cc00ff;
+          margin-bottom: 30px; }
+    #info .info__content .content__image-content {
+      grid-area: image;
+      background-image: url(../images/grabacion.jpeg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 15px; }
 
 /*********TARJETAS ARTISTAS**********/
 #artists {
@@ -760,15 +763,13 @@ footer {
   text-align: center;
   margin: 20px;
   height: 90%; }
-
-.products__card--artist:hover {
-  background: linear-gradient(90deg, #43d3d6 0%, #30c57a 100%);
-  transform: scale(1.1);
-  cursor: pointer; }
-
-.products__card--artist a {
-  font-size: 30px;
-  color: black; }
+  .products__card--artist a {
+    font-size: 30px;
+    color: black; }
+  .products__card--artist:hover {
+    background: linear-gradient(90deg, #43d3d6 0%, #30c57a 100%);
+    transform: scale(1.1);
+    cursor: pointer; }
 
 .artist-1:hover {
   background-image: url(../images/duki_img2.jpg);
@@ -853,34 +854,26 @@ footer {
   align-items: center;
   text-align: center;
   color: #ffffff; }
-
-.product__title {
-  font-size: 4em;
-  animation: fadeIn;
-  animation-duration: 2s; }
-
-.product__subtitle {
-  width: 80%;
-  animation: fadeIn;
-  animation-duration: 2s; }
+  #hero-product .product__title {
+    font-size: 4em;
+    animation: fadeIn;
+    animation-duration: 2s; }
+  #hero-product .product__subtitle {
+    width: 80%;
+    animation: fadeIn;
+    animation-duration: 2s; }
 
 /****** SERVICIO DE PRODUCCION / MEZCLA & MASTERING **************/
 #production-services {
   margin-top: 60px;
   height: 120vh; }
-
-.services__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  padding: 50px;
-  font-size: 3em; }
-
-.cards-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
+  #production-services .services__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 50px;
+    font-size: 3em; }
 
 /***************** AUDIOS BEATS *******************/
 #beats {
@@ -900,10 +893,9 @@ footer {
   align-items: center;
   margin: 30px;
   transition-duration: 0.3s; }
-
-.beat__item:hover {
-  transform: scale(1.1);
-  transition-duration: 0.3s; }
+  .beat__item:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s; }
 
 .beat__title {
   font-size: 1.5em;
@@ -965,3 +957,65 @@ footer {
     height: 225vh; }
   .beats__title {
     text-align: center; } }
+
+#main-contact {
+  margin-top: 68.8px; }
+
+#contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 700px;
+  grid-template-areas: "redsocial form";
+  background-image: url(/images/artista_grabando.jpg);
+  background-size: cover;
+  color: white; }
+
+.contacto__redsocial {
+  grid-area: redsocial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px; }
+  .contacto__redsocial .contact__title {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .contacto__redsocial .redsocial__title {
+    font-size: 1.5em; }
+  .contacto__redsocial .redsocial__subtitle {
+    text-align: center;
+    font-size: 1em; }
+  .contacto__redsocial .redsocial__content {
+    padding: 20px; }
+
+.form-contact {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+/********************** Media Queries ********************/
+@media screen and (max-width: 768px) {
+  #contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 700px;
+    grid-template-areas: "redsocial" "form"; } }
+
+#main-login {
+  margin-top: 68.8px; }
+
+#login {
+  background-image: url(/images/Beats&Services.png);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #login .login__title {
+    color: white; }
+  #login .form-login {
+    height: 500px; }

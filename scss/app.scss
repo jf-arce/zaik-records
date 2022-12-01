@@ -1,11 +1,13 @@
 //base
 @import "./base/reset.scss";
 @import "./base/typo.scss";
+@import "./base/colors.scss";
 
 //Components
 @import "./components/buttons.scss";
 @import "./components/cards.scss";
 @import "./components/sliders.scss";
+@import "./components/forms.scss";
 
 //Layout
 @import "./layout/header.scss";
@@ -15,4 +17,6 @@
 @import "./views/home.scss";
 @import "./views/sobre-nosotros.scss";
 @import "./views/beats-servicios.scss";
+@import "./views/contacto.scss";
+@import "./views/login.scss"
 

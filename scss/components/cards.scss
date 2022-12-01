@@ -30,7 +30,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(90deg, rgb(175, 18, 202) 0%, rgb(146, 51, 241) 100%);
+	background: $primary_color;
 }
 .card-service--active{
 	transform: scale(1.03);
@@ -66,6 +66,11 @@
 	margin-bottom: 100px;
 }
 
+.cards-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
 /********************** Media Querie **************************/
 
 /********** Tarjetas Licencias ********/

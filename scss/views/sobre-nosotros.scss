@@ -9,18 +9,21 @@
 	align-items: center;
 	justify-content: center;
 	color: aliceblue;
-}
-.hero__container--sn{
-	display: flex;
-	align-items: center;
-	justify-content: center;
 
-	animation: fadeIn;
-	animation-duration: 2s;
+	.hero__container--sn{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	
+		animation: fadeIn;
+		animation-duration: 2s;
+	
+		.hero__title--sn{
+			font-size: 4em;
+		}
+	}
 }
-.hero__title-sn{
-	font-size: 4em;
-}
+
 /*section 2*/
 
 #phrase{
@@ -29,13 +32,14 @@
 	display: flex;
 	align-items: center;
 
+	.phrase__title{
+		color: hsla(150, 61%, 48%, 1);
+		color: #cc00ff;
+		font-size: 4em;
+		text-align: center;
+	}
 }
-.phrase__title{
-	color: hsla(150, 61%, 48%, 1);
-	color: #cc00ff;
-	font-size: 4em;
-	text-align: center;
-}
+
 
 /*section 3*/
 
@@ -45,55 +49,54 @@
 	align-items: center;
 	justify-content: center;
 	margin: 0px 40px;
-}
 
-.info__title{
-	font-size: 4em;
-	margin-bottom: 120px;
-	color: #cc00ff;
-	color: aliceblue;
-}
-.info__content{
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
-	grid-template-rows: repeat(3,1fr);
-	grid-template-areas: 
-	"text image"
-	"text image" 
-	"text image";
-	padding: 0px 50px;
-	gap: 50px;
-}
-.content__text{
-	grid-area: text;
-	color: aliceblue
-}
-.text__information{
-	margin-bottom: 60px;
-	margin-right: 30px;
-	line-height: 35px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.information__tittle{
-	margin-bottom: 30px;
-}
-.content__image-content{
-	grid-area: image;
-	background-image: url(../images/grabacion.jpeg);
-	background-size: cover;
-	background-position: center;
-	border-radius: 15px;
-}
+	.info__title{
+		font-size: 4em;
+		margin-bottom: 120px;
+		color: #cc00ff;
+		color: aliceblue;
+	}
 
-.information__tittle{
-	color: #cc00ff;
-}
-.image-content__img{
-	width: 610px;
-	height:1100px;
+	.info__content{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-template-rows: repeat(3,1fr);
+		grid-template-areas: 
+		"text image"
+		"text image" 
+		"text image";
+		padding: 0px 50px;
+		gap: 50px;
+
+		.content__text{
+			grid-area: text;
+			color: aliceblue;
+
+			.text__information{
+				margin-bottom: 60px;
+				margin-right: 30px;
+				line-height: 35px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+
+				.information__tittle{
+					color: #cc00ff;
+					margin-bottom: 30px;
+				}
+			}
+		}
+
+		.content__image-content{
+			grid-area: image;
+			background-image: url(../images/grabacion.jpeg);
+			background-size: cover;
+			background-position: center;
+			border-radius: 15px;
+		}
+
+	}
 }
 
 /*********TARJETAS ARTISTAS**********/
@@ -109,7 +112,7 @@
 }
 
 .products__card--artist{
-	background: linear-gradient(to left, #cc00ff, #7F00FF);
+	background: $primary_color;
 	padding: 100px;
 	border: 5px solid rgb(41, 41, 41);
 	border-radius: 15px;
@@ -118,19 +121,18 @@
 	justify-content: center;
 	text-align: center;
 	margin: 20px;
-	
 	height: 90%;
-}
 
-.products__card--artist:hover{
-	background: linear-gradient(90deg, hsla(181, 64%, 55%, 1) 0%, hsla(150, 61%, 48%, 1) 100%);
-	transform: scale(1.10);
-	cursor: pointer;
-}
+	a{
+		font-size: 30px;
+		color: rgb(0, 0, 0);
+	}
 
-.products__card--artist a{
-	font-size: 30px;
-	color: rgb(0, 0, 0);
+	&:hover{
+		background: $secondary_color;
+		transform: scale(1.10);
+		cursor: pointer;
+	}
 }
 
 .artist-1:hover{

@@ -1,0 +1,20 @@
+#main-login{
+    margin-top: 68.8px;
+}
+
+#login{
+    background-image: url(/images/Beats&Services.png);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .login__title{
+        color: white;
+    }
+
+    .form-login{
+        height: 500px;
+    }
+}

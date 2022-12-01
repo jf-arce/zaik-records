@@ -1,0 +1,62 @@
+#main-contact{
+    margin-top: 68.8px;
+}
+#contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 700px ;
+    grid-template-areas: "redsocial form";
+    background-image: url(/images/artista_grabando.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+
+.contacto__redsocial{
+    grid-area: redsocial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+    .contact__title{
+        grid-area: title;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redsocial__title{
+        font-size: 1.5em;
+    }
+    .redsocial__subtitle{
+        text-align: center;
+        font-size: 1em;
+    }
+    .redsocial__content{
+        padding: 20px;        
+    }
+}
+
+.form-contact{
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/********************** Media Queries ********************/
+
+@media screen and (max-width:768px){
+    #contact{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 700px ;
+        grid-template-areas: 
+        "redsocial"
+        "form";
+        
+    }
+}

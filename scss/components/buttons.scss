@@ -1,7 +1,7 @@
 /**************BOTONES*******************/
 .btn{
 	color: black;
-	background: linear-gradient(90deg, hsla(181, 64%, 55%, 1) 0%, hsla(150, 61%, 48%, 1) 100%);
+	background: $secondary_color;
 	text-transform: uppercase;
 	font-weight: bold;
 	border: 1px solid #000000;

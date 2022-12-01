@@ -1,0 +1,32 @@
+form{
+    padding: 15px 30px;
+    background-color: #121212;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+    .form__title{
+        font-size: 1.5em;
+        padding-top: 10px;
+        display: flex;
+        justify-content:left;
+        align-items: flex-end;
+        color: white;
+    }
+
+    .campo{
+        border-radius: 5px;
+        &::-webkit-input-placeholder{
+            padding: 10px;
+            font-size: 0.9em;
+        }
+    }
+    .enviar{
+        margin-top: 10px;
+        border-radius: 10px;
+        border: none;
+        &:hover{
+            transform: none;
+        }
+    }
+}
