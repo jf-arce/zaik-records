@@ -74,11 +74,6 @@
 	}
 }
 
-
-
-
-
-
 /********THIRD SECTION: VENTA DE BEATS*********/
 
 #buy-beats{
@@ -168,23 +163,24 @@
 @media screen and (max-width:768px){
     #welcome{
         height:110vh;
+
+		.welcome__title{
+			font-size: 1.8em;	
+			text-align: center;
+			justify-content: center;
+			padding: 0px;
+			padding-top: 30px;
+		}
+		.welcome__subtitle{
+			font-size: 1.4em;
+			text-align:center;
+			padding: 40px;
+		}
+		.welcome__paragraph{
+			font-size: 1.1em;
+		}
     }
-	.welcome__title{
-		font-size: 1.8em;	
-		text-align: center;
-        justify-content: center;
-		padding: 0px;
-		padding-top: 30px;
-	}
-	.welcome__subtitle{
-		font-size: 1.4em;
-		text-align:center;
-		padding: 40px;
-;
-	}
-	.welcome__paragraph{
-		font-size: 1.1em;
-	}
+	
 }
 
 /*********Seccion 2 Sobre nosotros********/
@@ -200,10 +196,12 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
+
+		.about-us__image img{
+			width: 100%;
+		}  
     }
-    .about-us__image img{
-        width: 100%;
-    }  
+    
 }
 
 /*********Seccion 3 Venta de Beats********/
@@ -216,19 +214,21 @@
 		"text"
 		"audios"
 		;
-    }
-	.buy-beats__text{
-		grid-area: text;
-	}
-	.audios{
-		grid-area: audios;
-		background-size: 300%;
-   		object-fit: cover;
 
-		audio{
-			width: 80%;
+		.buy-beats__text{
+			grid-area: text;
 		}
-	}
+		.audios{
+			grid-area: audios;
+			background-size: 300%;
+			   object-fit: cover;
+	
+			audio{
+				width: 80%;
+			}
+		}
+    }
+	
 }
 
 /*********Seccion 4 Licencias********/
@@ -239,11 +239,11 @@
 		flex-direction: column;
 		justify-content: center;
 		height: 115vh;
-	}
-	
-	.products__card{
-		width: 70%;
-		height: 80px;
-		margin: 20px;
-	}
+
+		.products__card{
+			width: 70%;
+			height: 80px;
+			margin: 20px;
+		}
+	}	
 }

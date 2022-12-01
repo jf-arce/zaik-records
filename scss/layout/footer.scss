@@ -27,9 +27,10 @@ footer{
 
 .logo-redes__redes a{
 	color: #ffffff;
-}
-.logo-redes__redes a :hover{
-	color: #6e6e6e;
+
+	&:hover{
+		color: #6e6e6e;
+	}
 }
 /**************/
 .mail-telefono{
@@ -67,6 +68,14 @@ footer{
 	align-items: center;
 	border-top: 0.5px solid #464646;
 	margin: 0px 20px;
+
+	a{
+		&:hover{
+			color: #c6c6c6;
+			padding: 10px;
+			font-size: 0.6em;
+		}
+	}
 }
 
 .copyright__texto{
@@ -74,11 +83,6 @@ footer{
 	padding: 10px;
 	font-size: 0.6em;
 	text-decoration: none;
-}
-.copyright a:hover{
-	color: #c6c6c6;
-	padding: 10px;
-	font-size: 0.6em;
 }
 
 /******************* Media Queries *******************/
