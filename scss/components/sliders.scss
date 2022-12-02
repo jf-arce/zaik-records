@@ -114,14 +114,7 @@
 	animation: slider-scroll 15s linear infinite;
 	width: auto;
 
-    &:hover{
-        animation-play-state: paused;
-    }
 }
-
-.slider-item:hover{
-	transform: scale(0.96);
-} 
 
 .slider-item{
 	border-radius: 30px;
@@ -133,39 +126,39 @@
 	color: white;
 
     &:hover{
-        animation-play-state: paused;
+        transform: scale(0.96);
     }
 }
 .slider-item:nth-child(1) {
 	background: linear-gradient(-229deg, #FBD52D, #EF3A7B);
-    background-image: url(/images/jquiles-2.jpg);
+    background-image: url(../images/jquiles-2.jpg);
 	background-size: cover;
 	background-position: center;
 }
 
 .slider-item:nth-child(2) {
 	background: linear-gradient(-229deg, #FF70AF, #5FA8F5);
-    background-image: url(/images/becky-g.jpg);
+    background-image: url(../images/becky-g.jpg);
 	background-size: cover;
 }
 
 .slider-item:nth-child(3) {
 	background: linear-gradient(-229deg, #0cebeb, #29ffc6);
-	background-image: url(/images/paulo-londra.jpg);
+	background-image: url(../images/paulo-londra.jpg);
 	background-size: cover;
 	background-position: center;
 }
 
 .slider-item:nth-child(4) {
 	background: linear-gradient(-229deg, #88F7F9, #048FFF);
-	background-image: url(/images/de-la-ghetto-_1080.jpg);
+	background-image: url(../images/de-la-ghetto-_1080.jpg);
 	background-size: cover;
 	background-position: center;
 }
 
 .slider-item:nth-child(5) {
 	background: linear-gradient(-229deg, #0093E9, #80D0C7);
-	background-image: url(/images/lgante.jpg);
+	background-image: url(../images/lgante.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -173,26 +166,26 @@
 
 .slider-item:nth-child(6) {
 	background: linear-gradient(-229deg, #cf91ff, #5782F5);
-	background-image: url(/images/eladio-carrion.jpg);
+	background-image: url(../images/eladio-carrion.jpg);
 	background-size: cover;
 	background-position: center;
 }
 
 .slider-item:nth-child(7) {
 	background: linear-gradient(-229deg, #642B73, #C6426E);
-	background-image: url(/images/anuelAA.jpg);
+	background-image: url(../images/anuelAA.jpg);
 	background-size: cover;
 	background-position: center;
 }
 .slider-item:nth-child(8) {
 	background: linear-gradient(-229deg, #35acac, #943ee5);
-	background-image: url(/images/nicki-nicole.jpg);
+	background-image: url(../images/nicki-nicole.jpg);
 	background-size: cover;
 	background-position: center;
 }
 .slider-item:nth-child(9) {
 	background: linear-gradient(-229deg, #35acac, #943ee5);
-	background-image: url(/images/trueno.jpg);
+	background-image: url(../images/trueno.jpg);
 	background-size: cover;
 	background-position: center;
 }
