@@ -95,9 +95,11 @@
 
 /*********TARJETAS ARTISTAS**********/
 #artists{
-	height: 145vh;
-	margin-bottom: -200px;
-	
+	margin: 50px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 .artists__title{
 	padding: 30px;
@@ -188,6 +190,7 @@
 			font-size: 2em;
 			margin-bottom: 50px;
 			margin-top: 0px;
+			text-align: center;
 		}
 
 		.info__content{
@@ -211,12 +214,13 @@
 /*********TARJETAS ARTISTAS**********/
 @media screen and (max-width:768px){
 	#artists{
-		margin-top: -50px;
-		height: 220vh;
+		margin: 0px 0px;
+		margin-bottom: 30px;
 
 		.artists__title{
 			padding: 0px;
 			font-size: 1.8em;
+			margin-bottom: 20px;
 		}
 	}
 	

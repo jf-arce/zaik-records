@@ -179,6 +179,7 @@
 		}
 		.welcome__paragraph{
 			font-size: 1.1em;
+			padding: 0px;
 		}
     }
 	
@@ -239,7 +240,7 @@
 	#products{
 		flex-direction: column;
 		justify-content: center;
-		height: 115vh;
+		height: 100%;
 
 		.products__card{
 			width: 70%;

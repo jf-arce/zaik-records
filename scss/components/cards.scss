@@ -15,9 +15,6 @@
 	justify-content: space-around;
 	gap: 20px;
 	padding: 0px 50px;
-	background-image: url(../images/Beats&Services.png);
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 .card-service{
 	width: 25%;
@@ -31,6 +28,7 @@
 	justify-content: center;
 	align-items: center;
 	background: $primary_color;
+	margin-bottom: 30px;
 }
 .card-service--active{
 	transform: scale(1.03);
@@ -83,12 +81,8 @@
 		height: auto;
 		display: flex;
 		flex-direction: column;
-		
-		gap: 20px;
-		padding: 0px 50px;
-		background-image: url(../images/Beats&Services.png);
-		background-size: cover;
-		background-repeat: no-repeat;
+
+		padding: 0px 30px;
 	}
 	.card-service{
 		width: 100%;

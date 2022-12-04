@@ -56,27 +56,29 @@
         <main id="main-login">
           <section id="login">    
             <h1 class="login__title">Login</h1> 
-            <div class="form-contact">
+            <div class="form-contact--login">
               <form action="" class="form-login">
                 <h2 class="form__title">Email</h2>
                 <input type="email" name="email" placeholder="Email" class="campo">
                 <h2 class="form__title">Contraseña</h2>
                 <input type="password" name="email" placeholder="Contraseña" class="campo">
-                <input type="submit" value="Login"  class="enviar btn">
-                  <a href="">¿Olvidaste tu contraseña?</a>
-
+                <div class="enviar-content enviar-content--login">
+                  <input type="submit" value="enviar" class="enviar btn">
+                </div>
+                
+                <a class="password-question" href="">¿Olvidaste tu contraseña?</a>
+                <div class="remember-me">
                   <label for="recordarme">Recordarme</label>
                   <input type="checkbox" name="recordar" id="recordarme" value="recordarme">
+                </div>
+               
 
-                  <div class="enviar btn">
-                      <a class="" href="#">Registrate</a>
-                  </div>
+                <div class="enviar-content enviar-content--login">
+                    <a class="enviar btn" href="#">Registrate</a>
+                </div>
               </form>
             </div>
           </section>
-
-
-            
         </main>
 
          <!-- *******   FOOTER   ******* -->

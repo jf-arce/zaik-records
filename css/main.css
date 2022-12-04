@@ -5,8 +5,7 @@
 
 body {
   font-family: 'Monument Extended', sans-serif;
-  background-color: #000;
-  overflow-x: hidden; }
+  background-color: #000; }
 
 a {
   text-decoration: none; }
@@ -25,9 +24,7 @@ a {
   .btn:hover {
     color: black;
     background: linear-gradient(90deg, #a743d6 0%, #3055c5 100%);
-    border: 1px solid #000000;
-    transform: scale(1.1);
-    animation-duration: 0.4s; }
+    border: 1px solid #000000; }
 
 /********** Tarjetas Licencias ********/
 .beats-services__title {
@@ -44,10 +41,7 @@ a {
   display: flex;
   justify-content: space-around;
   gap: 20px;
-  padding: 0px 50px;
-  background-image: url(../images/Beats&Services.png);
-  background-size: cover;
-  background-repeat: no-repeat; }
+  padding: 0px 50px; }
 
 .card-service {
   width: 25%;
@@ -60,7 +54,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to left, #cc00ff, #7F00FF); }
+  background: linear-gradient(to left, #cc00ff, #7F00FF);
+  margin-bottom: 30px; }
 
 .card-service--active {
   transform: scale(1.03);
@@ -110,11 +105,7 @@ a {
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 0px 50px;
-    background-image: url(../images/Beats&Services.png);
-    background-size: cover;
-    background-repeat: no-repeat; }
+    padding: 0px 30px; }
   .card-service {
     width: 100%;
     font-size: 1em;
@@ -317,7 +308,8 @@ form {
   background-color: #121212;
   border-radius: 15px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  font-family: 'Karla', sans-serif; }
   form .form__title {
     font-size: 1.5em;
     padding-top: 10px;
@@ -329,29 +321,55 @@ form {
     border-radius: 5px;
     height: 10%;
     width: 100%;
-    font-family: 'Karla', sans-serif;
-    padding: 10px; }
+    padding: 10px;
+    margin: 5px 0px; }
     form .campo::-webkit-input-placeholder {
-      padding: 10px;
       font-size: 0.9em; }
   form textarea {
     min-height: 20% !important; }
   form .enviar-content {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 30px; }
   form .enviar {
     margin-top: 10px;
     border-radius: 10px;
-    border: none;
     width: 100%; }
     form .enviar:hover {
       transform: none; }
 
+.remember-me {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  color: white;
+  font-size: 1em;
+  display: flex;
+  justify-content: center; }
+  .remember-me input {
+    margin-left: 10px; }
+
+.password-question {
+  color: white;
+  font-size: 1em;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; }
+
+.enviar-content--login {
+  margin: 10px !important; }
+
+.form-contact--login {
+  width: 30%; }
+
+/*************************** Media Queries ************************/
 @media screen and (max-width: 768px) {
   form {
-    padding: 15px 15px; } }
+    padding: 15px 15px; }
+  .form-contact--login {
+    width: 90%; } }
 
 /*****NAVBAR - HEADER*****/
 .navbar {
@@ -437,7 +455,8 @@ footer {
   color: #6e6e6e; }
 
 .logo-redes__redes a {
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 0px 8px; }
   .logo-redes__redes a:hover {
     color: #6e6e6e; }
 
@@ -497,7 +516,9 @@ footer {
     grid-template-rows: 180px 200px auto;
     grid-template-areas: "logo-redes" "mail-telefono" "copyright"; }
   .copyright {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .mail-telefono__title {
+    font-size: 1em; } }
 
 /***************************** INDEX *************************************************/
 /*********Seccion 1 WELCOME********/
@@ -638,7 +659,8 @@ footer {
       text-align: center;
       padding: 40px; }
     #welcome .welcome__paragraph {
-      font-size: 1.1em; } }
+      font-size: 1.1em;
+      padding: 0px; } }
 
 /*********Seccion 2 Sobre nosotros********/
 @media screen and (max-width: 768px) {
@@ -676,7 +698,7 @@ footer {
   #products {
     flex-direction: column;
     justify-content: center;
-    height: 115vh; }
+    height: 100%; }
     #products .products__card {
       width: 70%;
       height: 80px;
@@ -756,8 +778,11 @@ footer {
 
 /*********TARJETAS ARTISTAS**********/
 #artists {
-  height: 145vh;
-  margin-bottom: -200px; }
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .artists__title {
   padding: 30px;
@@ -829,7 +854,8 @@ footer {
     #info .info__title {
       font-size: 2em;
       margin-bottom: 50px;
-      margin-top: 0px; }
+      margin-top: 0px;
+      text-align: center; }
     #info .info__content {
       padding: 0;
       grid-template-areas: "text text" "text text"  "text text";
@@ -841,11 +867,12 @@ footer {
 /*********TARJETAS ARTISTAS**********/
 @media screen and (max-width: 768px) {
   #artists {
-    margin-top: -50px;
-    height: 220vh; }
+    margin: 0px 0px;
+    margin-bottom: 30px; }
     #artists .artists__title {
       padding: 0px;
-      font-size: 1.8em; } }
+      font-size: 1.8em;
+      margin-bottom: 20px; } }
 
 /************************************ Beats & Servicios ***************************************************/
 #beat-services {
@@ -877,8 +904,7 @@ footer {
 
 /****** SERVICIO DE PRODUCCION / MEZCLA & MASTERING **************/
 #production-services {
-  margin-top: 60px;
-  height: 120vh; }
+  margin-top: 60px; }
   #production-services .services__title {
     display: flex;
     justify-content: center;
@@ -889,8 +915,7 @@ footer {
 
 /***************** AUDIOS BEATS *******************/
 #beats {
-  background-color: #0c0c0c;
-  height: 100vh; }
+  background-color: #0c0c0c; }
   #beats .beat__item {
     background-image: url(../images/home-studio-basico.png);
     background-size: cover;
@@ -928,7 +953,8 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center; }
+    align-content: center;
+    padding: 30px 0px; }
 
 /******************************* Media Queries ***********************************/
 /*** hero ***/
@@ -945,8 +971,7 @@ footer {
 /****** SERVICIO DE PRODUCCION / MEZCLA & MASTERING **************/
 @media (max-width: 768px) {
   #production-services {
-    margin-top: 60px;
-    height: 370vh; }
+    margin-top: 60px; }
     #production-services .services__title {
       text-align: center;
       font-size: 2.5em;
@@ -955,13 +980,12 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      padding: 50px; } }
+      padding: 30px; } }
 
 /***************** AUDIOS BEATS *******************/
 @media (max-width: 768px) {
   #beats {
-    background-color: #0c0c0c;
-    height: 225vh; }
+    background-color: #0c0c0c; }
     #beats .beats__title {
       text-align: center; } }
 
@@ -1038,7 +1062,7 @@ footer {
     padding: 0px 50px; } }
 
 #main-login {
-  margin-top: 68.8px; }
+  margin-top: 40px; }
 
 #login {
   background-image: url(../images/Beats&Services.png);
@@ -1048,6 +1072,12 @@ footer {
   justify-content: center;
   align-items: center; }
   #login .login__title {
-    color: white; }
+    color: white;
+    margin-bottom: 30px; }
   #login .form-login {
     height: 500px; }
+
+/********************* Media Querie ************************/
+@media screen and (max-width: 768px) {
+  .login__title {
+    margin-bottom: 0px !important; } }

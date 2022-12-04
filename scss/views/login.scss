@@ -1,5 +1,5 @@
 #main-login{
-    margin-top: 68.8px;
+    margin-top: 40px;
 }
 
 #login{
@@ -12,9 +12,16 @@
 
     .login__title{
         color: white;
+        margin-bottom: 30px;
     }
 
     .form-login{
         height: 500px;
+    }
+}
+/********************* Media Querie ************************/
+@media screen and (max-width:768px){
+    .login__title{
+        margin-bottom: 0px !important;
     }
 }

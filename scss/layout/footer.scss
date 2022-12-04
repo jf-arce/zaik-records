@@ -27,7 +27,7 @@ footer{
 
 .logo-redes__redes a{
 	color: #ffffff;
-
+	padding: 0px 8px;
 	&:hover{
 		color: #6e6e6e;
 	}
@@ -105,5 +105,9 @@ footer{
 	}
 	.copyright{
 		flex-direction: column;
+	}
+
+	.mail-telefono__title{
+		font-size: 1em;
 	}
 }
