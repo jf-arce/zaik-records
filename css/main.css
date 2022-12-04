@@ -309,6 +309,7 @@ form {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: 'Karla', sans-serif; }
   form .form__title {
     font-size: 1.5em;
@@ -332,7 +333,7 @@ form {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 30px; }
+    margin: 10px; }
   form .enviar {
     margin-top: 10px;
     border-radius: 10px;
@@ -357,9 +358,6 @@ form {
   margin-top: 20px;
   display: flex;
   justify-content: center; }
-
-.enviar-content--login {
-  margin: 10px !important; }
 
 .form-contact--login {
   width: 30%; }
@@ -1054,12 +1052,13 @@ footer {
     grid-template-rows: 700px;
     grid-template-areas: "redsocial" "form"; }
   .contacto__redsocial {
-    margin-top: 68.8px; }
+    margin-top: 68.8px;
+    padding: 0px; }
   form {
     margin: 50px 0px; }
   .form-contact {
     margin-top: 0px;
-    padding: 0px 50px; } }
+    padding: 0px 30px; } }
 
 #main-login {
   margin-top: 40px; }
