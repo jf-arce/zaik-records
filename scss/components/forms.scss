@@ -1,5 +1,7 @@
 form{
-    padding: 15px 30px;
+    padding: 10px 30px;
+    height: 100%;
+    width: 100%;
     background-color: #121212;
     border-radius: 15px;
     display: flex;
@@ -16,10 +18,25 @@ form{
 
     .campo{
         border-radius: 5px;
+        height: 10%;
+        width: 100%;
         &::-webkit-input-placeholder{
             padding: 10px;
             font-size: 0.9em;
         }
+        font-family: 'Karla', sans-serif;
+        padding: 10px;
+    }
+
+    textarea{
+        min-height: 20% !important;
+    }
+
+    .enviar-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
     }
     .enviar{
         margin-top: 10px;
@@ -28,5 +45,12 @@ form{
         &:hover{
             transform: none;
         }
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px){
+    form{
+        padding: 15px 15px;
     }
 }

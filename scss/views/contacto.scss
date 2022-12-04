@@ -1,10 +1,7 @@
-#main-contact{
-    margin-top: 68.8px;
-}
 #contact{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 700px ;
+    grid-template-rows: 100vh ;
     grid-template-areas: "redsocial form";
     background-image: url(../images/artista_grabando.jpg);
     background-size: cover;
@@ -17,7 +14,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 50px;
+    padding: 0px 50px;
+    margin-top: 50px;
 
     .contact__title{
         grid-area: title;
@@ -28,13 +27,39 @@
 
     .redsocial__title{
         font-size: 1.5em;
+        text-align: center;
     }
+    
     .redsocial__subtitle{
         text-align: center;
         font-size: 1em;
-    }
+    } 
     .redsocial__content{
-        padding: 20px;        
+        padding: 20px;   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;     
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo-redes__redes{
+       h3{
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+       }
+       .redes__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        a{
+            padding: 0px 15px;
+        }
+       }
+     
     }
 }
 
@@ -44,6 +69,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 68.8px;
+    padding: 50px;
+    
 }
 
 
@@ -52,11 +80,23 @@
 @media screen and (max-width:768px){
     #contact{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
         grid-template-rows: 700px ;
         grid-template-areas: 
         "redsocial"
         "form";
-        
+    }
+
+    .contacto__redsocial{
+        margin-top: 68.8px;
+    }
+
+    form{
+        margin: 50px 0px;
+    }
+
+    .form-contact{
+        margin-top: 0px;
+        padding: 0px 50px;
     }
 }

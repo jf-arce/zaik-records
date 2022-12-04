@@ -311,7 +311,9 @@ a {
       transform: translateX(calc(-300px * 7)); } } }
 
 form {
-  padding: 15px 30px;
+  padding: 10px 30px;
+  height: 100%;
+  width: 100%;
   background-color: #121212;
   border-radius: 15px;
   display: flex;
@@ -324,16 +326,32 @@ form {
     align-items: flex-end;
     color: white; }
   form .campo {
-    border-radius: 5px; }
+    border-radius: 5px;
+    height: 10%;
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+    padding: 10px; }
     form .campo::-webkit-input-placeholder {
       padding: 10px;
       font-size: 0.9em; }
+  form textarea {
+    min-height: 20% !important; }
+  form .enviar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px; }
   form .enviar {
     margin-top: 10px;
     border-radius: 10px;
-    border: none; }
+    border: none;
+    width: 100%; }
     form .enviar:hover {
       transform: none; }
+
+@media screen and (max-width: 768px) {
+  form {
+    padding: 15px 15px; } }
 
 /*****NAVBAR - HEADER*****/
 .navbar {
@@ -947,13 +965,10 @@ footer {
     #beats .beats__title {
       text-align: center; } }
 
-#main-contact {
-  margin-top: 68.8px; }
-
 #contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 700px;
+  grid-template-rows: 100vh;
   grid-template-areas: "redsocial form";
   background-image: url(../images/artista_grabando.jpg);
   background-size: cover;
@@ -965,34 +980,62 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 60px; }
+  gap: 50px;
+  padding: 0px 50px;
+  margin-top: 50px; }
   .contacto__redsocial .contact__title {
     grid-area: title;
     display: flex;
     justify-content: center;
     align-items: center; }
   .contacto__redsocial .redsocial__title {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    text-align: center; }
   .contacto__redsocial .redsocial__subtitle {
     text-align: center;
     font-size: 1em; }
   .contacto__redsocial .redsocial__content {
-    padding: 20px; }
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; }
+  .contacto__redsocial .logo-redes__redes h3 {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; }
+  .contacto__redsocial .logo-redes__redes .redes__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .contacto__redsocial .logo-redes__redes .redes__content a {
+      padding: 0px 15px; }
 
 .form-contact {
   grid-area: form;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 68.8px;
+  padding: 50px; }
 
 /********************** Media Queries ********************/
 @media screen and (max-width: 768px) {
   #contact {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: 700px;
-    grid-template-areas: "redsocial" "form"; } }
+    grid-template-areas: "redsocial" "form"; }
+  .contacto__redsocial {
+    margin-top: 68.8px; }
+  form {
+    margin: 50px 0px; }
+  .form-contact {
+    margin-top: 0px;
+    padding: 0px 50px; } }
 
 #main-login {
   margin-top: 68.8px; }
