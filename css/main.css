@@ -856,11 +856,18 @@ footer {
       text-align: center; }
     #info .info__content {
       padding: 0;
-      grid-template-areas: "text text" "text text"  "text text";
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: "text text" "text text"  "text text" "image image";
       gap: 0px; }
     #info .text__information {
       margin: 0px 0px;
-      margin-bottom: 40px; } }
+      margin-bottom: 40px; }
+    #info .content__image-content {
+      grid-area: image;
+      background-image: url(../images/grabacion.jpeg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 15px; } }
 
 /*********TARJETAS ARTISTAS**********/
 @media screen and (max-width: 768px) {
@@ -1015,7 +1022,8 @@ footer {
     text-align: center; }
   .contacto__redsocial .redsocial__subtitle {
     text-align: center;
-    font-size: 1em; }
+    font-size: 1em;
+    padding: 0px 10px; }
   .contacto__redsocial .redsocial__content {
     padding: 20px;
     display: flex;
@@ -1043,6 +1051,23 @@ footer {
   justify-content: center;
   margin-top: 68.8px;
   padding: 50px; }
+
+/**** Acordion section ***/
+.questions {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px; }
+
+.questions__title {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center; }
+
+.accordion {
+  font-family: 'Karla', sans-serif; }
 
 /********************** Media Queries ********************/
 @media screen and (max-width: 768px) {

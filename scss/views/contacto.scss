@@ -33,6 +33,7 @@
     .redsocial__subtitle{
         text-align: center;
         font-size: 1em;
+        padding: 0px 10px;
     } 
     .redsocial__content{
         padding: 20px;   
@@ -71,10 +72,25 @@
     justify-content: center;
     margin-top: 68.8px;
     padding: 50px;
-    
 }
 
-
+/**** Acordion section ***/
+.questions{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.questions__title{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.accordion{
+    font-family: 'Karla', sans-serif;
+}
 /********************** Media Queries ********************/
 
 @media screen and (max-width:768px){
