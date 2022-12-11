@@ -887,7 +887,7 @@ footer {
 
 /*hero*/
 #hero-product {
-  background-image: url(../images/beat&services2.jpg);
+  background-image: url(../../images/presentacion-transparencia.png);
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 68.78px;
@@ -903,7 +903,7 @@ footer {
     animation: fadeIn;
     animation-duration: 2s; }
   #hero-product .product__subtitle {
-    width: 80%;
+    width: 70%;
     animation: fadeIn;
     animation-duration: 2s; }
 
