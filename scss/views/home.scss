@@ -42,9 +42,9 @@
 /********SECOND SECTION: SOBRE NOSOTROS*********/
 #about-us{
     background-color: #121212;
-	color: rgb(255, 255, 255);
-	font-family: 'Monument Extended', sans-serif; 
-	display: grid;
+    color: rgb(255, 255, 255);
+    font-family: 'Monument Extended', sans-serif; 
+    display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-column-gap: 50px;
     padding: 50px;
@@ -189,20 +189,20 @@
 
 @media screen and (max-width:768px){
 	#about-us{
-        grid-template-columns: auto;
-        grid-template-rows: repeat(2,1fr);
-        grid-row-gap: 50px;
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(2,1fr);
+	grid-row-gap: 50px;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 
 		.about-us__image img{
 			width: 100%;
 		}  
-    }
+	}
     
 }
 
